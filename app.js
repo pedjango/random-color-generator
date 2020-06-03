@@ -77,7 +77,13 @@ function copyHexValue() {
 
   document.execCommand("copy");
   
-  alert("Copied hex color: " + copiedValue.value);
+  // alert("Copied hex color: " + copiedValue.value);
+  Swal.fire({
+    title: 'Hexadecimal',
+    text: 'You have copied the color ' + copiedValue.value,
+    icon: 'success',
+    confirmButtonText: 'Noice'
+  })
 }
 
 function copyRGBValue() {
@@ -88,5 +94,11 @@ function copyRGBValue() {
 
   document.execCommand("copy");
   
-  alert("Copied RGB color: " + copiedValue.value);
+  // alert("Copied RGB color: " + copiedValue.value);
+  Swal.fire({
+    title: 'RGB',
+    text: 'You have copied the color ' + copiedValue.value,
+    icon: 'success',
+    confirmButtonText: 'Noice'
+  })
 }

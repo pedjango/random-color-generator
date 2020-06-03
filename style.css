@@ -38,7 +38,12 @@ header h2 {
   /*visibility: hidden;*/
   border: none;
   background-color: inherit;
+  font-size: 16px;
   /*display: none;*/
+}
+
+#hex-c:active, #rgb-c:active {
+  border: none;
 }
 
 #color-box {
@@ -47,12 +52,24 @@ header h2 {
   background-color: white;
   display: inline-block;
   border-radius: 25px;
-  /*border: 5px dashed black;*/
+  margin: 10px 0;
+  /*
+  border: 5px dashed black;
   margin: 15px 0 10px 0;
   outline: 4px dashed black;
   outline-offset: 5px;
   -moz-outline-radius: 25px;
   -webkit-outline-radius: 25px;
+  */
+}
+
+.color-box-wrapper {
+  width: 220px;
+  height: 220px;
+  background-color: antiquewhite;
+  display: inline-block;
+  border-radius: 25px;
+  border: 5px dashed black;
 }
 
 .btn {
@@ -99,6 +116,10 @@ footer {
   div#color-box {
     width: 150px;
     height: 150px;
+  }
+  div.color-box-wrapper {
+    width: 170px;
+    height: 170px;
   }
   button.btn {
     width: 120px;
