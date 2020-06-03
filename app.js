@@ -1,7 +1,13 @@
 function colorChange() {
   let hex = "#" + ((Math.random() * 0xffffff) << 0).toString(16);
-  document.getElementById("hex").innerHTML = "| " + hex.toUpperCase();
-  document.getElementById("hex-c").value = hex;
+  if (hex.length == 7) {
+    document.getElementById("hex").innerHTML = "| " + hex.toUpperCase();
+    document.getElementById("hex-c").value = hex;
+  } else {
+    hex += "0";
+    document.getElementById("hex").innerHTML = "| " + hex.toUpperCase();
+    document.getElementById("hex-c").value = hex;
+  }
 
   let rgb = hexToRgb(hex);
   document.getElementById("rgb").innerHTML = "| " + rgb;
@@ -71,34 +77,34 @@ function hexToDec(Q) {
 
 function copyHexValue() {
   let copiedValue = document.getElementById("hex-c");
-  
+
   copiedValue.select();
   copiedValue.setSelectionRange(0, 99999);
 
   document.execCommand("copy");
-  
+
   // alert("Copied hex color: " + copiedValue.value);
   Swal.fire({
-    title: 'Hexadecimal',
-    text: 'You have copied the color ' + copiedValue.value,
-    icon: 'success',
-    confirmButtonText: 'Noice'
-  })
+    title: "Hexadecimal",
+    text: "You have copied the color " + copiedValue.value,
+    icon: "success",
+    confirmButtonText: "Noice",
+  });
 }
 
 function copyRGBValue() {
   let copiedValue = document.getElementById("rgb-c");
-  
+
   copiedValue.select();
   copiedValue.setSelectionRange(0, 99999);
 
   document.execCommand("copy");
-  
+
   // alert("Copied RGB color: " + copiedValue.value);
   Swal.fire({
-    title: 'RGB',
-    text: 'You have copied the color ' + copiedValue.value,
-    icon: 'success',
-    confirmButtonText: 'Noice'
-  })
+    title: "RGB",
+    text: "You have copied the color " + copiedValue.value,
+    icon: "success",
+    confirmButtonText: "Noice",
+  });
 }
