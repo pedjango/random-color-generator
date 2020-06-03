@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random color generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>
+        Random color generator
+      </h2>
+      <span id="h2-sub"
+        >This is just a random color generator. <br />
+        To copy a value just click on either the hex value or RGB value.</span
+      >
+    </header>
+
+    <div class="color-btn-field">
+      <p>Hex <span id="hex" value="" onclick="copyHexValue()"></span></p>
+      <p>RGB <span id="rgb" value="" onclick="copyRGBValue()"></span></p>
+      <div id="color-box"></div><br>
+      <input type="text" id="hex-c" value="" /><br />
+      <input type="text" id="rgb-c" value="" />
+      <br />
+      <button class="btn" onclick="colorChange()">
+        Click me!
+      </button>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <span style="font-weight: 600;">
+        Random Color Generator by
+        <a href="#" target="_blank" rel="nofollow" id="my-link">pedjango</a>
+      </span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
