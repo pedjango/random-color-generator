@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: white;
   padding: 15px 0 35px 0;
 }
@@ -23,7 +23,7 @@ header {
 header h2 {
   font-family: "Tangerine", sans-serif;
   font-size: 48px;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 #h2-sub {
@@ -40,10 +40,6 @@ header h2 {
   background-color: inherit;
   font-size: 16px;
   /*display: none;*/
-}
-
-#hex-c:active, #rgb-c:active {
-  border: none;
 }
 
 #color-box {
@@ -75,7 +71,7 @@ header h2 {
 .btn {
   width: 150px;
   height: 75px;
-  margin: 50px 0 50px 0;
+  margin: 30px 0 40px 0;
   font-size: 20px;
   border: none;
   background-color: coral;
@@ -90,7 +86,7 @@ header h2 {
 
 footer {
   font-size: 16px;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
 }
 
 #my-link {
